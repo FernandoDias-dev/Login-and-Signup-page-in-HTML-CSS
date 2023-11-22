@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup and Login Form</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Formulário de Cadastro e Login</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,51 +17,55 @@
           action="https://formsubmit.co/fernandodiass.dev@gmail.com"
           method="post"
         >
-          <label for="chk" aria-hidden="true">Sign up</label>
-          <input type="text" name="text" placeholder="User name" required="" />
+          <label for="chk" aria-hidden="true">Cadastre-se</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Nome de usuário"
+            required
+          />
           <input
             type="email"
             name="email"
-            id=""
-            placeholder="Email"
-            required=""
+            id="email"
+            placeholder="E-mail"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           />
           <input
             type="password"
-            name="psw"
-            placeholder="password"
-            id=""
-            required=""
+            name="password"
+            placeholder="Senha"
+            id="password"
+            required
           />
           <input
             type="password"
-            name="psw"
-            placeholder="Confirm password"
-            id=""
-            required=""
+            name="confirmPassword"
+            placeholder="Confirmar senha"
+            id="confirmPassword"
+            required
           />
-          <button>Sign up</button>
+          <button type="submit">Cadastrar</button>
         </form>
       </div>
       <div class="login">
         <form action="/">
           <label for="chk" aria-hidden="true">Login</label>
           <input
-            type="email"
-            name="email"
-            id=""
-            placeholder="Email Or User name"
-            required=""
+            type="text"
+            name="loginUsername"
+            placeholder="E-mail ou Nome de usuário"
+            required
           />
           <input
             type="password"
-            name="password"
-            id=""
-            placeholder="password"
-            required=""
+            name="loginPassword"
+            placeholder="Senha"
+            required
           />
-          <button>Login</button>
-          <p>Don't have account <a href="#">Create account</a>.</p>
+          <button type="submit">Entrar</button>
+          <p>Ainda não tem uma conta? <a href="#">Crie uma conta</a>.</p>
         </form>
       </div>
     </div>

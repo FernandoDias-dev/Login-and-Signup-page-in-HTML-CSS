@@ -11,7 +11,7 @@ body {
 .main {
   width: 350px;
   height: 480px;
-  background: rgb(111, 128, 224);
+  background: rgb(0, 48, 99);
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 5px 30px 50px black;
@@ -84,7 +84,7 @@ button:hover {
 }
 
 .login label {
-  color: #573b8a;
+  color: #003063;
   transform: scale(0.6);
 }
 
@@ -103,4 +103,28 @@ button:hover {
 
 #chk:checked ~ .signup label {
   transform: scale(0.6);
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    width: 90%;
+  }
+
+  .signup,
+  .login {
+    height: auto;
+  }
+
+  label {
+    font-size: 25px;
+    margin: 30px;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  button {
+    width: 80%;
+  }
 }
